@@ -98,7 +98,7 @@ body{
 }
 
 #firstPage{
-    height: 60vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
