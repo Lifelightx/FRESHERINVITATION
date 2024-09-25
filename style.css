@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+#bg{
+    width: 100%;
+    background-color: transparent;
+     
+}
+
+.bgBox{
+    border-radius: 50%;
+    z-index: -10;
+}
+#Abox{
+    background-color: #2bdc9b;
+    height: 250px;
+    width: 250px;
+    position: fixed;
+    left: 220px;
+    top: 200px;
+    filter:blur(10px)
+    
+}
+#Bbox{
+    background-color: #01716b;
+    height: 170px;
+    width: 170px;
+    position: fixed;
+    left: 800px;
+    top: 350px;
+    filter: blur(10px);
+   
+}
+
+#cursor{
+    height: 30px;
+    width: 30px;
+    background-color: #01716b;
+    border-radius: 50%;
+    position: fixed;
+    mix-blend-mode:difference;
+    z-index: 10000;
+    pointer-events: none; /* Ensure the cursor does not block interaction */
+}
+
+#main{
+    height: 100%;
+    background-color: #d9effc6a;
+    backdrop-filter: blur(25px);
+    border-radius: 10px;
+}
+
+#nav{
+    /* move the nav element to the right side */
+
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+#navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#leftPart{
+    font-family: poppins;
+    font-weight: 200;
+    font-size: 20px;
+    mix-blend-mode: difference;
+    color: #01716b;
+    text-transform: uppercase;
+}
+#rightPart{
+    text-align: right;
+    mix-blend-mode: difference;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    right: 2px;
+    margin-right: 20px;
+}
+
+#nav a:hover{
+    color: #05999e;
+}
+
+#firstPage{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+#firstPage h1{
+    font-size: 10vw;
+    text-transform: uppercase;
+}
+#firstPage p{
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+#secondPage{
+    height: auto;
+    overflow: hidden;
+}
+#secondPage h1{
+    text-align: center;
+    font-size: 10vw;
+    
+}
+
+#secondPage #textMca{
+    font-size: 15vw;
+}
+
+.clutter{
+    display: inline-block;
+}
+
+#secondPage #para{
+    font-size: 15px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#thirdPage{
+    height: auto;
+    background: rgba(245, 245, 245, 0.107);
+    ;
+}
+
+#thirdDiv{
+    padding: 10% 0;
+    backdrop-filter: blur(20px);
+}
+
+#thirdPage h1{
+    text-align: center;
+    font-size: 15vw;
+    
+}
+
+
+#text{
+    font-family: 'Samarkan', sans-serif;
+}
+#year{
+    font-family: 'Samarkan', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 6vw;
+}
+
+#pageFour{
+    margin-top: 60px;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+#pageFour h1{
+    text-align: center;
+    font-size: 10vw;
+    background-color: rgba(240, 248, 255, 0.564);
+    backdrop-filter: blur(20px);
+    padding: 8% 3%;
+    text-transform: uppercase;
+    /* text-shadow: 1px 1px 10px rgb(175, 175, 175); */
+}
+
+.msgclutter{
+    display: inline-block;
+    color: #003135;
+}
+.msg0{
+    color: #00afbf;
+}
+.msg1{
+    color: #00565e;
+}
+
+.msg2{
+    color: #002017;
+}
+
+.msg4{
+    color: #c4a4f9;
+} 
+
+#pageFive{
+    height: 100vh;
+}
