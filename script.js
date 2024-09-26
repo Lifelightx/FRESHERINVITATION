@@ -223,8 +223,8 @@ gsap.from('#pageSix #programme .pgm',{
     scrollTrigger: {
         trigger: '#pageSix #programme .pgm',
         scroller: 'body',
-        start: 'top 90%',
-        end: 'top 40%',
+        start: 'top 70%',
+        end: 'top 30%',
         scrub: 1
     }
 

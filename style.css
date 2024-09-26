@@ -339,7 +339,9 @@ html{
   font-weight: lighter;
   font-size: 4vw;
     padding-left: 10%;
+    mix-blend-mode:luminosity;
 }
+
 
 
 
