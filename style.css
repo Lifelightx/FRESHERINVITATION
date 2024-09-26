@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -125,6 +128,9 @@ body{
     font-size: 10vw;
     
 }
+#institute{
+    text-align: center;
+}
 
 #secondPage #textMca{
     font-size: 15vw;
@@ -143,10 +149,46 @@ body{
     margin-bottom: 20px;
 }
 
-#thirdPage{
+#thirdPage, #invitationMessage{
     height: auto;
     background: rgba(245, 245, 245, 0.107);
-    ;
+    
+}
+
+
+#invitationMessage{
+    background-color: rgba(223, 254, 255, 0.542);
+}
+#paragraph{
+    text-align: center;
+}
+#inviteMsg15, #inviteMsg16{
+    font-size: 5vw;
+    font-weight: bolder;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    color: red;
+}
+
+#inviteMsg15::before {
+    content: "";
+    display: block;
+}
+#inviteMsg16::after {
+    content: "";
+    display: block;
+}
+
+#invitationMessage p{
+    text-align: center;
+    font-size: 2vw;
+    backdrop-filter: blur(20px);
+    margin-top: 10px;
+    padding: 8% 4%;
+    font-family: "Satisfy", cursive;
+  font-weight: 400;
+
+  font-style: normal;
 }
 
 #thirdDiv{
@@ -170,6 +212,11 @@ body{
     font-weight: bold;
     font-size: 6vw;
 }
+
+#inviteMesssage{
+    display: inline-block;
+}
+
 
 #pageFour{
     margin-top: 60px;
@@ -208,4 +255,94 @@ body{
 
 #pageFive{
     height: 100vh;
+}
+
+
+
+
+/* General mobile styles for screens smaller than 768px */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%; /* Reduce base font size for better readability */
+    }
+    #cursor{
+        display: none;
+    }
+    
+
+    #leftPart {
+        font-size: 14px; /* Reduce font size */
+    }
+    #rightPart{
+        font-size: 14px;
+    }
+    #itName::before{
+        content: '';
+        display: block;
+    }
+
+    #rightPart {
+        margin-top: 10px; /* Add spacing between links */
+    }
+
+    #firstPage h1, #secondPage h1, #thirdPage h1, #pageFour h1 {
+        font-size: 8vw; /* Scale down headers */
+    }
+
+    #textMca {
+        font-size: 12vw; /* Smaller font size for MCA text */
+    }
+
+    #year {
+        font-size: 4vw; /* Smaller font size for the year */
+    }
+
+    /* Adjust background circle size */
+    #Abox {
+        height: 150px;
+        width: 150px;
+        left: 50px;
+        top: 100px;
+    }
+
+    #Bbox {
+        height: 100px;
+        width: 100px;
+        left: 500px;
+        top: 250px;
+    }
+
+    #cursor {
+        height: 20px;
+        width: 20px;
+    }
+
+    #paragraph {
+        font-size: 1.5vw; /* Adjust font size for paragraphs */
+    }
+
+    #secondPage{
+        height: 50vh;
+    }
+    #thirdDiv{
+        height: 50vh;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #thirdPage h1{
+        font-size: 20vw;
+    }
+    #year{
+        font-size: 25vw;
+    }
+    #paragraph span{
+        font-size: 7vw;
+    }
+    #pageFour #message{
+        padding:140px 20px;
+        font-size: 16vw;
+    }
 }
