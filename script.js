@@ -25,7 +25,7 @@ gsap.to('#firstPage #welcome',{
         scroller: 'body',
         start: 'top 40%',
         end: 'top 0%',
-        scrub: true
+        scrub: 2
     }
 })
 gsap.to('#firstPage #institute',{
@@ -36,7 +36,7 @@ gsap.to('#firstPage #institute',{
         scroller: 'body',
         start: 'top 40%',
         end: 'top 0%',
-        scrub: true
+        scrub: 2
     }
 })
 
@@ -67,7 +67,7 @@ gsap.from('#secondPage .clutter', {
         scroller: 'body',
         start: 'top 80%',
         end: 'top 50%',
-        scrub: true
+        scrub: 2
     }
 });
 
@@ -80,7 +80,7 @@ gsap.from('#secondPage #para',{
         scroller: 'body',
         start: 'top 100%',
         end: 'top 70%',
-        scrub: true
+        scrub: 2
     }
 })
 gsap.registerPlugin(TextPlugin, ScrollTrigger);
@@ -159,7 +159,7 @@ gsap.from('#paragraph', {
         scroller: 'body',
         start: 'top 75%',
         end: 'top 10%',
-        scrub: true
+        scrub: 2
     }
 })
 
@@ -173,7 +173,7 @@ gsap.from('#paragraph .inviteMesssage',{
         scroller: 'body',
         start: 'top 75%',
         end: 'top 20%',
-        scrub: true
+        scrub: 2
     }
 })
 
@@ -200,7 +200,7 @@ gsap.from('#pageFour .msgclutter',{
         scroller: 'body',
         start: 'top 50%',
         end: 'top 8%',
-        scrub: true
+        scrub: 2
     }
 })
 
@@ -213,7 +213,7 @@ gsap.from('#pageFive .countdown-container', {
         scroller: 'body',
         start: 'top 80%', // When the top of the element reaches 80% of the viewport
         end: 'top 10%',   // When the top of the element reaches 10% of the viewport
-        scrub: true // Smooth animation tied to the scroll position
+        scrub: 2 // Smooth animation tied to the scroll position
     }
 });
 
@@ -225,7 +225,7 @@ gsap.from('#pageSix #programme .pgm',{
         scroller: 'body',
         start: 'top 90%',
         end: 'top 40%',
-        scrub: 2
+        scrub: 1
     }
 
 })
