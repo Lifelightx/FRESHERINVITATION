@@ -253,8 +253,68 @@ body{
     color: #c4a4f9;
 } 
 
-#pageFive{
+
+
+#pageFive {
     height: 100vh;
+    font-family: "Josefin Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+    color: rgb(12, 0, 29);
+    margin: 0;
+}
+
+.countdown-container {
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 8vw;
+    letter-spacing: -5px;
+}
+
+#Image{
+    width: 200px;
+    height: 200px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.countDownDiv{
+    display: flex;
+    gap: 10px;
+}
+
+.time-box {
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+    background-color: #ede8f5;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.time-box span {
+    display: block;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.time-box p {
+    font-size: 18px;
+    margin: 0;
+}
+
+#pageSix{
+    height: 60vh;
 }
 
 
@@ -268,7 +328,12 @@ body{
     #cursor{
         display: none;
     }
-    
+    #welcome{
+        font-size: 16vw;
+    }
+    .headers{
+        padding: 0 10px;
+    }
 
     #leftPart {
         font-size: 14px; /* Reduce font size */
@@ -343,6 +408,28 @@ body{
     }
     #pageFour #message{
         padding:140px 20px;
+        font-size: 16vw;
+    }
+    .countdown{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px;
+    }
+    .countDownDiv{
+        justify-content: center;
+        align-items: center;
+    }
+    .time-box{
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 120px;
+    }
+    .countdown-container h1{
         font-size: 16vw;
     }
 }

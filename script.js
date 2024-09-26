@@ -235,3 +235,33 @@ if (window.innerWidth < 768) {
         }
     });
 }
+
+
+// Set the target date and time for the countdown (4th October 2024, 10:00 AM)
+const targetDate = new Date("October 4, 2024 10:00:00").getTime();
+
+// Function to update the countdown every second
+const updateCountdown = () => {
+    const now = new Date().getTime();
+    const timeDifference = targetDate - now;
+
+    // Calculate time in days, hours, minutes, and seconds
+    const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+    // Display the result in the corresponding elements
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+
+    // If the countdown is over, display a message
+    if (timeDifference < 0) {
+        document.querySelector(".countdown").innerHTML = "Event Started!";
+    }
+};
+
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
