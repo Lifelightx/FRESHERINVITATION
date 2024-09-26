@@ -330,6 +330,7 @@ h1 {
     }
     #welcome{
         font-size: 16vw;
+        letter-spacing: 2px;
     }
     .headers{
         padding: 0 10px;
@@ -351,7 +352,7 @@ h1 {
     }
 
     #firstPage h1, #secondPage h1, #thirdPage h1, #pageFour h1 {
-        font-size: 8vw; /* Scale down headers */
+        font-size: 16vw; /* Scale down headers */
     }
 
     #textMca {

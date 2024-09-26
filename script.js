@@ -205,16 +205,17 @@ gsap.from('#pageFour .msgclutter',{
 })
 
 gsap.from('#pageFive .countdown-container', {
-   
-    z:-200,
+    z: -200, // Correct use of z for 3D transform
+    opacity: 0,
+    duration: 1,
     scrollTrigger: {
         trigger: '#pageFive .countdown-container',
         scroller: 'body',
-        start: 'top 80%',
-        end: 'top 10%',
-        scrub: true
+        start: 'top 80%', // When the top of the element reaches 80% of the viewport
+        end: 'top 10%',   // When the top of the element reaches 10% of the viewport
+        scrub: true // Smooth animation tied to the scroll position
     }
-})
+});
 
 
 
