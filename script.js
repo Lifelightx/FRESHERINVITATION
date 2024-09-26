@@ -217,18 +217,18 @@ gsap.from('#pageFive .countdown-container', {
     }
 });
 
-gsap.from('#pageSix #programme .pgm',{
-    x: -500, // Correct
+gsap.from('#pageSix #programme .pgm', {
+    x: () => window.innerWidth < 768 ? -300 : -500, // Adjust 'x' value based on screen size
     duration: 1,
     scrollTrigger: {
         trigger: '#pageSix #programme .pgm',
         scroller: 'body',
-        start: 'top 70%',
-        end: 'top 30%',
+        start: 'top 90%', // Adjust scroll position for smaller screens
+        end: () => window.innerWidth < 768 ? 'top 40%' : 'top 30%', // Change the end point
         scrub: true
     }
+});
 
-})
   
 
 
