@@ -274,7 +274,7 @@ html{
     text-align: center;
 }
 
-h1 {
+.countdown-container h1 {
     margin-bottom: 30px;
     font-size: 8vw;
     letter-spacing: -5px;
@@ -461,6 +461,7 @@ footer {
         padding:140px 20px;
         font-size: 16vw;
     }
+    
     .countdown{
         flex-direction: column;
         justify-content: center;
@@ -493,6 +494,7 @@ footer {
     #programme{
         padding-bottom: 50px;
     }
+   
     #programme h2{
         font-size: 5vw;
     }
