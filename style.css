@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Satisfy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,6 +10,9 @@
 body{
     font-family: Arial, sans-serif;
     height: 100%;
+}
+html{
+    scroll-behavior: smooth;
 }
 
 #bg{
@@ -314,8 +317,55 @@ h1 {
 }
 
 #pageSix{
-    height: 60vh;
+    margin-top: 30px;
+    height: auto;
+    overflow-x: hidden;
+    background-color: #ece0ff63;
 }
+
+#programme{
+    padding-bottom: 10%;
+
+}
+#programme h1{
+    font-size: 13vw;
+    padding: 10% 0 0 0;
+}
+
+#programme h2{
+    text-transform: uppercase;
+    font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: lighter;
+  font-size: 4vw;
+    padding-left: 10%;
+}
+
+
+
+footer {
+    background-color: #e0fff5;
+    color: #002017;
+    padding: 20px 0;
+    font-family: "Josefin Sans", sans-serif;
+    text-align: center;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+
+  footer a {
+    color: #ff4d00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+    color: #005eff;
+  }
 
 
 
@@ -433,4 +483,24 @@ h1 {
     .countdown-container h1{
         font-size: 16vw;
     }
+    #pageSix{
+        height: 60vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #programme{
+        padding-bottom: 50px;
+    }
+    #programme h2{
+        font-size: 5vw;
+    }
+
+    footer {
+        padding: 10px 0;
+      }
+      footer p {
+        font-size: 12px;
+      }
 }

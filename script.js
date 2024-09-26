@@ -107,7 +107,7 @@ gsap.from('#year',{
       }
 })
 gsap.to("#text", {
-  text: {value: "PARICHAYA", scrambleText: {chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", revealDelay: 0.1}},
+  text: {value: "PARICHAY", scrambleText: {chars: "ABCDEFGHIJKLMNOPQRSTUVWXYZ", revealDelay: 0.1}},
   duration: 1.8, 
   
    // Speed of the animation
@@ -217,6 +217,19 @@ gsap.from('#pageFive .countdown-container', {
     }
 });
 
+gsap.from('#pageSix #programme .pgm',{
+    x: -500, // Correct
+    duration: 1,
+    scrollTrigger: {
+        trigger: '#pageSix #programme .pgm',
+        scroller: 'body',
+        start: 'top 90%',
+        end: 'top 40%',
+        scrub: 2
+    }
+
+})
+  
 
 
 main.addEventListener('mousemove', function(event){
@@ -247,6 +260,7 @@ if (window.innerWidth < 768) {
             scrub: true
         }
     });
+
 }
 
 
