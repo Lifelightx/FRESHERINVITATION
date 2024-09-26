@@ -204,6 +204,18 @@ gsap.from('#pageFour .msgclutter',{
     }
 })
 
+gsap.from('#pageFive .countdown-container', {
+   
+    z:-200,
+    scrollTrigger: {
+        trigger: '#pageFive .countdown-container',
+        scroller: 'body',
+        start: 'top 80%',
+        end: 'top 10%',
+        scrub: true
+    }
+})
+
 
 
 main.addEventListener('mousemove', function(event){
